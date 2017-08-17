@@ -1,0 +1,3 @@
+class Disposable
+  #todo
+end
