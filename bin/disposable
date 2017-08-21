@@ -1,0 +1,13 @@
+#!/usr/bin/env ruby
+
+#
+# Author:: James Halsall <james.t.halsall@googlemail.com>
+# Copyright:: 2017 rights reserved.
+# License:: MIT
+#
+
+require './lib/disposable.rb'
+
+disposable = Disposable.new();
+remaining_disposable = disposable.calculateRemaining(ARGV[0], ARGV[1]);
+printf("You have %0.2f remaining disposable income", remaining_disposable)
