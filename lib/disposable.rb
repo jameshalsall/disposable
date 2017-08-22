@@ -4,8 +4,8 @@
 # License:: MIT
 #
 
-require 'Date'
-require './lib/calculator/outgoings_calculator.rb'
+require 'date'
+require 'lib/calculator/outgoings_calculator'
 
 #
 # Disposable.

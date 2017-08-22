@@ -6,7 +6,9 @@
 # License:: MIT
 #
 
-require './lib/disposable.rb'
+$:.unshift File.dirname(__dir__)
+
+require 'lib/disposable'
 
 disposable = Disposable.new();
 remaining_disposable = disposable.calculateRemaining(ARGV[0], ARGV[1]);
