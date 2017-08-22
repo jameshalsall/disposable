@@ -16,9 +16,8 @@ require 'lib/calculator/outgoings_calculator'
 #
 class Disposable
   def calculateRemaining(outgoings_data_file, current_balance)
-    # TODO: parse the CSV data
-    outgoings = OutgoingsCalculator.remainingOutgoings(Date.today.strftime("%d"), [])
+    remaining_outgoings = OutgoingsCalculator.remainingOutgoings(Date.today.strftime("%d"), [])
 
-    return current_balance.to_i - outgoings
+    return current_balance.to_i - remaining_outgoings
   end
 end
